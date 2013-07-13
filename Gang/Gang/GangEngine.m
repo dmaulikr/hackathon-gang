@@ -86,6 +86,9 @@
             }
             if ([_delegate respondsToSelector:@selector(didReceiveGang:)])
                 [_delegate didReceiveGang:gang];
+        } else {
+            if ([_delegate respondsToSelector:@selector(noGangsLoaded)])
+                [_delegate noGangsLoaded];
         }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

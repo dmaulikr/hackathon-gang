@@ -16,6 +16,7 @@
 @optional
 - (void)didReceiveGang:(Gang *)gang;
 - (void)didloadCrimes:(NSArray *)crimes;
+- (void)noGangsLoaded;
 @end
 
 @interface GangEngine : NSObject

@@ -19,6 +19,7 @@
 @property (nonatomic, strong) Gang *gang;
 
 + (void)showInView:(UIView *)view withGang:(Gang *)gang;
++ (void)showNOGangsLoadedInView:(UIView *)view;
 + (GangDropDown*)sharedDropdown;
 
 @end

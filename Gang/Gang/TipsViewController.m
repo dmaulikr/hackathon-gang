@@ -26,8 +26,9 @@
 
 - (void)viewDidLoad
 {
+    self.title = @"Gang Info";
     self.view.backgroundColor = [UIColor flatWhiteColor];
-    [[self.navigationController navigationBar] setTintColor:[UIColor flatWhiteColor]];
+    [[self.navigationController navigationBar] setTintColor:[UIColor flatBlackColor]];
     
     myCollapseClick.CollapseClickDelegate = self;
     [myCollapseClick reloadCollapseClick];

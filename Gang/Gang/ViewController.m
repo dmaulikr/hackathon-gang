@@ -59,6 +59,10 @@
     [GangDropDown showInView:self.view withGang:gang];
 }
 
+- (void)noGangsLoaded {
+    [GangDropDown showNOGangsLoadedInView:self.view];
+}
+
 - (void)didloadCrimes:(NSArray *)crimes_ {
     [crimes removeAllObjects];
     [crimes addObjectsFromArray:crimes_];

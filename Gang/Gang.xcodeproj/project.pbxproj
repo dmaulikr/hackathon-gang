@@ -10,10 +10,11 @@
 		9E4787DA1791ED46008BF3EB /* GangEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4787D91791ED46008BF3EB /* GangEngine.m */; };
 		9E4787DD1791F0FB008BF3EB /* Gang.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4787DC1791F0FB008BF3EB /* Gang.m */; };
 		9E4787E01791F1B4008BF3EB /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4787DF1791F1B4008BF3EB /* Crime.m */; };
-		9E4787E21791F5F0008BF3EB /* dahood.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9E4787E11791F5F0008BF3EB /* dahood.gpx */; };
-		9E4787E91791FE21008BF3EB /* test2.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9E4787E81791FE21008BF3EB /* test2.gpx */; };
-		9E4787EC179208A2008BF3EB /* test3.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9E4787EB179208A2008BF3EB /* test3.gpx */; };
+		9E4787E21791F5F0008BF3EB /* Gangers Disciples.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9E4787E11791F5F0008BF3EB /* Gangers Disciples.gpx */; };
+		9E4787E91791FE21008BF3EB /* Latin Kings.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9E4787E81791FE21008BF3EB /* Latin Kings.gpx */; };
+		9E4787EC179208A2008BF3EB /* Black P Stone.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9E4787EB179208A2008BF3EB /* Black P Stone.gpx */; };
 		9E4787EF17920A5A008BF3EB /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4787EE17920A5A008BF3EB /* MapViewAnnotation.m */; };
+		9E4787F117921358008BF3EB /* 1871.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9E4787F017921358008BF3EB /* 1871.gpx */; };
 		9ECA58D81791B9AD0035B793 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECA58D71791B9AD0035B793 /* UIKit.framework */; };
 		9ECA58DA1791B9AD0035B793 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECA58D91791B9AD0035B793 /* Foundation.framework */; };
 		9ECA58DC1791B9AD0035B793 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECA58DB1791B9AD0035B793 /* CoreGraphics.framework */; };
@@ -52,11 +53,12 @@
 		9E4787DC1791F0FB008BF3EB /* Gang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gang.m; sourceTree = "<group>"; };
 		9E4787DE1791F1B4008BF3EB /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crime.h; sourceTree = "<group>"; };
 		9E4787DF1791F1B4008BF3EB /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crime.m; sourceTree = "<group>"; };
-		9E4787E11791F5F0008BF3EB /* dahood.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dahood.gpx; sourceTree = "<group>"; };
-		9E4787E81791FE21008BF3EB /* test2.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test2.gpx; sourceTree = "<group>"; };
-		9E4787EB179208A2008BF3EB /* test3.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test3.gpx; sourceTree = "<group>"; };
+		9E4787E11791F5F0008BF3EB /* Gangers Disciples.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Gangers Disciples.gpx"; sourceTree = "<group>"; };
+		9E4787E81791FE21008BF3EB /* Latin Kings.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Latin Kings.gpx"; sourceTree = "<group>"; };
+		9E4787EB179208A2008BF3EB /* Black P Stone.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Black P Stone.gpx"; sourceTree = "<group>"; };
 		9E4787ED17920A5A008BF3EB /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewAnnotation.h; sourceTree = "<group>"; };
 		9E4787EE17920A5A008BF3EB /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewAnnotation.m; sourceTree = "<group>"; };
+		9E4787F017921358008BF3EB /* 1871.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1871.gpx; sourceTree = "<group>"; };
 		9ECA58D41791B9AD0035B793 /* Gang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECA58D71791B9AD0035B793 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9ECA58D91791B9AD0035B793 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -162,9 +164,10 @@
 				9E4787DB1791F0FB008BF3EB /* Gang.h */,
 				9E4787DC1791F0FB008BF3EB /* Gang.m */,
 				9E4787DE1791F1B4008BF3EB /* Crime.h */,
-				9E4787E11791F5F0008BF3EB /* dahood.gpx */,
-				9E4787E81791FE21008BF3EB /* test2.gpx */,
-				9E4787EB179208A2008BF3EB /* test3.gpx */,
+				9E4787F017921358008BF3EB /* 1871.gpx */,
+				9E4787E11791F5F0008BF3EB /* Gangers Disciples.gpx */,
+				9E4787E81791FE21008BF3EB /* Latin Kings.gpx */,
+				9E4787EB179208A2008BF3EB /* Black P Stone.gpx */,
 				9E4787DF1791F1B4008BF3EB /* Crime.m */,
 				9ECA58DE1791B9AD0035B793 /* Supporting Files */,
 				9E4787ED17920A5A008BF3EB /* MapViewAnnotation.h */,
@@ -262,9 +265,10 @@
 				9ECA591C1791C8140035B793 /* 42-info.png in Resources */,
 				9ECA591D1791C8140035B793 /* 42-info@2x.png in Resources */,
 				9ECA59221791D21C0035B793 /* CollapseClickCell.xib in Resources */,
-				9E4787E21791F5F0008BF3EB /* dahood.gpx in Resources */,
-				9E4787E91791FE21008BF3EB /* test2.gpx in Resources */,
-				9E4787EC179208A2008BF3EB /* test3.gpx in Resources */,
+				9E4787E21791F5F0008BF3EB /* Gangers Disciples.gpx in Resources */,
+				9E4787E91791FE21008BF3EB /* Latin Kings.gpx in Resources */,
+				9E4787EC179208A2008BF3EB /* Black P Stone.gpx in Resources */,
+				9E4787F117921358008BF3EB /* 1871.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

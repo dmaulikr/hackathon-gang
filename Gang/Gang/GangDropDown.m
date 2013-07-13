@@ -32,7 +32,7 @@
         self.layer.masksToBounds = NO;
         
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 320, 30)];
-        self.titleLabel.text = @"YOU ARE IN:";
+        self.titleLabel.text = @"TERRITORY:";
         self.titleLabel.backgroundColor = [UIColor clearColor];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.textColor = [UIColor flatWhiteColor];
@@ -77,6 +77,38 @@
     return DefaultInstance;
 }
 
++ (void)showNOGangsLoadedInView:(UIView *)view {
+    GangDropDown *dropDown = [GangDropDown sharedDropdown];
+    dropDown.gang = nil;
+    if (![dropDown isDescendantOfView:view]) {
+        [view addSubview:dropDown];
+    }
+    if (dropDown.shown) {
+        [dropDown hideWithCompletion:^{
+            [dropDown show];
+            dropDown.backgroundColor = [UIColor flatGrayColor];
+            dropDown.subtitleLabel.text = @"No Gangs Here";
+            NSString  *gangDescription = @"";
+            if (gangDescription.length > 100) {
+                gangDescription = [[gangDescription substringToIndex:100] stringByAppendingString:@"..."];
+            }
+            dropDown.descriptionTextView.text = gangDescription;
+            
+        }];
+    } else {
+        [dropDown show];
+        dropDown.backgroundColor = [UIColor flatGrayColor];
+        dropDown.subtitleLabel.text = @"No Gangs Here";
+        NSString  *gangDescription = @"";
+        if (gangDescription.length > 100) {
+            gangDescription = [[gangDescription substringToIndex:100] stringByAppendingString:@"..."];
+        }
+        dropDown.descriptionTextView.text = gangDescription;
+        
+    }
+
+}
+
 + (void)showInView:(UIView *)view withGang:(Gang *)gang {
     GangDropDown *dropDown = [GangDropDown sharedDropdown];
     dropDown.gang = gang;
@@ -87,7 +119,7 @@
         [dropDown hideWithCompletion:^{
             [dropDown show];
             dropDown.backgroundColor = gang.gangColor;
-            dropDown.subtitleLabel.text = gang.name;
+            dropDown.subtitleLabel.text = [gang.name uppercaseString];
             NSString  *gangDescription = gang.gangDescription;
             if (gangDescription.length > 100) {
                 gangDescription = [[gangDescription substringToIndex:100] stringByAppendingString:@"..."];
@@ -98,7 +130,7 @@
     } else {
         [dropDown show];
         dropDown.backgroundColor = gang.gangColor;
-        dropDown.subtitleLabel.text = gang.name;
+        dropDown.subtitleLabel.text = [gang.name uppercaseString];
         NSString  *gangDescription = gang.gangDescription;
         if (gangDescription.length > 100) {
             gangDescription = [[gangDescription substringToIndex:100] stringByAppendingString:@"..."];
