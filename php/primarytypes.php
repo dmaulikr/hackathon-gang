@@ -2,7 +2,7 @@
 
 define('SERVER', 'db479373705.db.1and1.com');
 define('USERNAME', 'dbo479373705');
-define('PASSWORD', 'sav99786');
+define('PASSWORD', '<ENTER PASSWORD>');
 define('DATABASE', 'db479373705');
 
 //Connect to MySQL
