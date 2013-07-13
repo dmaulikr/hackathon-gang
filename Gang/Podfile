@@ -1,0 +1,9 @@
+platform :ios, '5.0'
+
+pod 'AFNetworking', '>= 0.5.1'
+pod 'SVProgressHUD'
+pod 'UIColor+MLPFlatColors'
+pod 'AKTabBarController', '~> 1.1.0'
+pod 'CollapseClick'
+
+generate_bridge_support!
