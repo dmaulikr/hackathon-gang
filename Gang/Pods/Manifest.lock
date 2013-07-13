@@ -1,0 +1,22 @@
+PODS:
+  - AFNetworking (1.3.1)
+  - AKTabBarController (1.1.0)
+  - CollapseClick (1.0.1)
+  - SVProgressHUD (0.9)
+  - UIColor+MLPFlatColors (1.0)
+
+DEPENDENCIES:
+  - AFNetworking (>= 0.5.1)
+  - AKTabBarController (~> 1.1.0)
+  - CollapseClick
+  - SVProgressHUD
+  - UIColor+MLPFlatColors
+
+SPEC CHECKSUMS:
+  AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
+  AKTabBarController: 34443d5d028700dea1d00a6f275e8ef17fc947c2
+  CollapseClick: da982aa88257b7e5bd7b188dfb1c1d78ab1d2acd
+  SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
+  UIColor+MLPFlatColors: 8631d7f050b0e5afd9af178a60319891c5113d0e
+
+COCOAPODS: 0.19.1

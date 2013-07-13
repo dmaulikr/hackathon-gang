@@ -1,0 +1,433 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<constant name='AFNetworkingErrorDomain' type='@'/>
+<constant name='AFNetworkingOperationDidFinishNotification' type='@'/>
+<constant name='AFNetworkingOperationDidStartNotification' type='@'/>
+<constant name='AFNetworkingOperationFailingURLRequestErrorKey' type='@'/>
+<constant name='AFNetworkingOperationFailingURLResponseErrorKey' type='@'/>
+<constant name='kAFUploadStream3GSuggestedDelay' type='d'/>
+<constant name='kAFUploadStream3GSuggestedPacketSize' type='I' type64='Q'/>
+<enum value='0' name='AFFormURLParameterEncoding'/>
+<enum value='1' name='AFJSONParameterEncoding'/>
+<enum value='2' name='AFPropertyListParameterEncoding'/>
+<enum value='3' name='SVProgressHUDMaskTypeBlack'/>
+<enum value='2' name='SVProgressHUDMaskTypeClear'/>
+<enum value='4' name='SVProgressHUDMaskTypeGradient'/>
+<enum value='1' name='SVProgressHUDMaskTypeNone'/>
+<enum value='50' name='kCCHeaderHeight'/>
+<enum value='10' name='kCCPad'/>
+<function name='AFContentTypesFromHTTPHeader'>
+<arg type='@'/>
+<retval type='@'/>
+</function>
+<function name='AFQueryStringFromParametersWithEncoding'>
+<arg type='@'/>
+<arg type='I' type64='Q'/>
+<retval type='@'/>
+</function>
+<class name='AFHTTPClient'>
+<method selector='HTTPRequestOperationWithRequest:success:failure:'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='allowsInvalidSSLCertificate'>
+<retval type='B'/>
+</method>
+<method selector='deletePath:parameters:success:failure:'>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='3' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='I' type64='Q'/>
+<arg type='I' type64='Q'/>
+<retval type='v'/>
+</arg>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='enqueueBatchOfHTTPRequestOperationsWithRequests:progressBlock:completionBlock:'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='I' type64='Q'/>
+<arg type='I' type64='Q'/>
+<retval type='v'/>
+</arg>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='getPath:parameters:success:failure:'>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='3' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='multipartFormRequestWithMethod:path:parameters:constructingBodyWithBlock:'>
+<arg index='3' function_pointer='true' type='@?'>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='patchPath:parameters:success:failure:'>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='3' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='postPath:parameters:success:failure:'>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='3' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='putPath:parameters:success:failure:'>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='3' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='registerHTTPOperationClass:'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsInvalidSSLCertificate:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+<class name='AFHTTPRequestOperation'>
+<method selector='canProcessRequest:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='hasAcceptableContentType'>
+<retval type='B'/>
+</method>
+<method selector='hasAcceptableStatusCode'>
+<retval type='B'/>
+</method>
+<method selector='setCompletionBlockWithSuccess:failure:'>
+<arg index='0' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<class name='AFImageRequestOperation'>
+<method selector='imageRequestOperationWithRequest:imageProcessingBlock:success:failure:' class_method='true'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='@'/>
+<retval type='@'/>
+</arg>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='3' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='imageRequestOperationWithRequest:success:' class_method='true'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<class name='AFJSONRequestOperation'>
+<method selector='JSONRequestOperationWithRequest:success:failure:' class_method='true'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<class name='AFPropertyListRequestOperation'>
+<method selector='propertyListRequestOperationWithRequest:success:failure:' class_method='true'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<class name='AFURLConnectionOperation'>
+<method selector='allowsInvalidSSLCertificate'>
+<retval type='B'/>
+</method>
+<method selector='isPaused'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsInvalidSSLCertificate:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setAuthenticationAgainstProtectionSpaceBlock:'>
+<arg index='0' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='B'/>
+</arg>
+</method>
+<method selector='setAuthenticationChallengeBlock:'>
+<arg index='0' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='setCacheResponseBlock:'>
+<arg index='0' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='@'/>
+</arg>
+</method>
+<method selector='setDownloadProgressBlock:'>
+<arg index='0' function_pointer='true' type='@?'>
+<arg type='I' type64='Q'/>
+<arg type='q'/>
+<arg type='q'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='setRedirectResponseBlock:'>
+<arg index='0' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='@'/>
+</arg>
+</method>
+<method selector='setShouldUseCredentialStorage:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setUploadProgressBlock:'>
+<arg index='0' function_pointer='true' type='@?'>
+<arg type='I' type64='Q'/>
+<arg type='q'/>
+<arg type='q'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='shouldUseCredentialStorage'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AFXMLRequestOperation'>
+<method selector='XMLDocumentRequestOperationWithRequest:success:failure:' class_method='true'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='XMLParserRequestOperationWithRequest:success:failure:' class_method='true'>
+<arg index='1' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<arg index='2' function_pointer='true' type='@?'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<class name='AKTab'>
+<method selector='glossyIsHidden'>
+<retval type='B'/>
+</method>
+<method selector='setGlossyIsHidden:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setTabIconPreRendered:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setTitleIsHidden:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='tabIconPreRendered'>
+<retval type='B'/>
+</method>
+<method selector='titleIsHidden'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AKTabBarController'>
+<method selector='hideTabBarAnimated:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='iconGlossyIsHidden'>
+<retval type='B'/>
+</method>
+<method selector='setIconGlossyIsHidden:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setTabIconPreRendered:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setTabTitleIsHidden:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='showTabBarAnimated:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='tabIconPreRendered'>
+<retval type='B'/>
+</method>
+<method selector='tabTitleIsHidden'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AKTabBarView'>
+<method selector='isTabBarHidding'>
+<retval type='B'/>
+</method>
+<method selector='setIsTabBarHidding:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+<class name='CollapseClick'>
+<method selector='closeCollapseClickCellAtIndex:animated:'>
+<arg index='1' type='B'/>
+</method>
+<method selector='closeCollapseClickCellsWithIndexes:animated:'>
+<arg index='1' type='B'/>
+</method>
+<method selector='openCollapseClickCellAtIndex:animated:'>
+<arg index='1' type='B'/>
+</method>
+<method selector='openCollapseClickCellsWithIndexes:animated:'>
+<arg index='1' type='B'/>
+</method>
+<method selector='scrollToCollapseClickCellAtIndex:animated:'>
+<arg index='1' type='B'/>
+</method>
+</class>
+<class name='CollapseClickCell'>
+<method selector='isClicked'>
+<retval type='B'/>
+</method>
+<method selector='setIsClicked:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='appendPartWithFileURL:name:error:'>
+<retval type='B'/>
+</method>
+<method selector='appendPartWithFileURL:name:fileName:mimeType:error:'>
+<retval type='B'/>
+</method>
+<method selector='didClickCollapseClickCellAtIndex:isNowOpen:'>
+<arg index='1' type='B'/>
+</method>
+</class>
+<class name='SVProgressHUD'>
+<method selector='isVisible' class_method='true'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='AFMultipartFormData'>
+<method selector='appendPartWithFileData:name:fileName:mimeType:' type='v24@0:4@8@12@16@20' type64='v48@0:8@16@24@32@40'/>
+<method selector='appendPartWithFileURL:name:error:' type='B20@0:4@8@12^@16' type64='B40@0:8@16@24^@32'/>
+<method selector='appendPartWithFileURL:name:fileName:mimeType:error:' type='B28@0:4@8@12@16@20^@24' type64='B56@0:8@16@24@32@40^@48'/>
+<method selector='appendPartWithFormData:name:' type='v16@0:4@8@12' type64='v32@0:8@16@24'/>
+<method selector='appendPartWithHeaders:body:' type='v16@0:4@8@12' type64='v32@0:8@16@24'/>
+<method selector='appendPartWithInputStream:name:fileName:length:mimeType:' type='v32@0:4@8@12@16Q20@28' type64='v56@0:8@16@24@32Q40@48'/>
+<method selector='throttleBandwidthWithPacketSize:delay:' type='v20@0:4I8d12' type64='v32@0:8Q16d24'/>
+</informal_protocol>
+<informal_protocol name='AKTabBarDelegate'>
+<method selector='tabBar:didSelectTabAtIndex:' type='v16@0:4@8i12' type64='v32@0:8@16q24'/>
+</informal_protocol>
+<informal_protocol name='CollapseClickDelegate'>
+<method selector='colorForCollapseClickTitleViewAtIndex:' type='@12@0:4i8' type64='@20@0:8i16'/>
+<method selector='colorForTitleArrowAtIndex:' type='@12@0:4i8' type64='@20@0:8i16'/>
+<method selector='colorForTitleLabelAtIndex:' type='@12@0:4i8' type64='@20@0:8i16'/>
+<method selector='didClickCollapseClickCellAtIndex:isNowOpen:' type='v16@0:4i8B12' type64='v24@0:8i16B20'/>
+<method selector='numberOfCellsForCollapseClick' type='i8@0:4' type64='i16@0:8'/>
+<method selector='titleForCollapseClickAtIndex:' type='@12@0:4i8' type64='@20@0:8i16'/>
+<method selector='viewForCollapseClickContentViewAtIndex:' type='@12@0:4i8' type64='@20@0:8i16'/>
+</informal_protocol>
+</signatures>
